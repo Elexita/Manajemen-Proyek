@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ftiuksw.tugasmanpro">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TugasManpro">
+        <activity android:name=".activity_history"></activity>
+        <activity android:name=".activity_workout_start" />
+        <activity android:name=".activity_workout_preview" />
+        <activity android:name=".activity_workout_time" />
+        <activity android:name=".workout_menu" />
+        <activity android:name=".profile_page" />
+        <activity android:name=".activity_resep" />
+        <activity android:name=".TipsActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
