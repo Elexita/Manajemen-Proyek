@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public String throwKategori;
     private LinearLayout layoutHitung, layoutHasil;
     private ImageView btnProfile;
-    private ImageButton btnHome, btnHistory;
+    private ImageButton btnHome, btnHistory, btnSurvey;
     private EditText weightField, heightField;
     private TextView heloText, heightHasilText, weightHasilText, indexText, kategoriText, kaloriText;
     private Button btnHitung, btnUlangi, btnUpdate, btnWorkout, btnResep, btnTips;
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnProfile = findViewById(R.id.btnProfile);
         btnHome = findViewById(R.id.btnHome);
         btnHistory = findViewById(R.id.btnHistory);
+        btnSurvey = findViewById(R.id.btnSurvey);
         weightField = findViewById(R.id.weightField);
         heightField = findViewById(R.id.heightField);
         heloText = findViewById(R.id.userHalo);
@@ -97,6 +98,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        btnSurvey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(com.ftiuksw.tugasmanpro.MainActivity.this, activity_history_survey.class);
+                startActivity(i);
+            }
+        });
+
 
         btnTips.setOnClickListener(new View.OnClickListener() {
             @Override

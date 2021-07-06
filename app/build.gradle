@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.ftiuksw.tugasmanpro"
-        minSdkVersion 29
+        minSdkVersion 27
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -35,4 +35,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha02'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }
