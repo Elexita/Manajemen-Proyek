@@ -59,7 +59,6 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
     }
 
     public class HolderData extends RecyclerView.ViewHolder{
-        public BreakIterator email;
         TextView id, nama, berat, kota, saran, email;
 
         public HolderData(@NonNull View itemView) {
@@ -69,7 +68,7 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData> {
             berat = itemView.findViewById(R.id.tp_berat);
             kota = itemView.findViewById(R.id.tp_kota);
             saran = itemView.findViewById(R.id.tp_saran);
-            email = itemView.findViewById((R.id.tp_email));
+            email = itemView.findViewById(R.id.tp_email);
 
             itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
